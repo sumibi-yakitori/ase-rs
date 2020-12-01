@@ -30,7 +30,7 @@ impl Default for Flags {
     }
 }
 
-#[derive(Debug)]
+#[derive(Debug, Clone)]
 pub struct Header {
     pub file_size: u32,
     pub frames: u16,

@@ -28,7 +28,7 @@ pub use self::slice_chunk::*;
 pub mod user_data_chunk;
 pub use self::user_data_chunk::*;
 
-#[derive(Debug)]
+#[derive(Debug, Clone)]
 pub enum ChunkData {
     OldPaletteChunk4(OldPaletteChunk4),
     OldPaletteChunk11(OldPaletteChunk11),
@@ -67,7 +67,7 @@ impl ChunkData {
     }
 }
 
-#[derive(Debug)]
+#[derive(Debug, Clone)]
 pub struct Chunk {
     pub chunk_size: u32,
     pub chunk_data: ChunkData,

@@ -4,7 +4,7 @@ use byteorder::{LittleEndian, ReadBytesExt, WriteBytesExt};
 
 use crate::helpers::{read_bytes, read_string, write_string};
 
-#[derive(Debug)]
+#[derive(Debug, Clone)]
 pub struct MaskChunk {
     pub x_position: i16,
     pub y_position: i16,

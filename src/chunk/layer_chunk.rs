@@ -49,7 +49,7 @@ pub enum BlendMode {
     Divide = 18,
 }
 
-#[derive(Debug)]
+#[derive(Debug, Clone)]
 pub struct LayerChunk {
     pub flags: Flags,
     pub layer_type: LayerType,

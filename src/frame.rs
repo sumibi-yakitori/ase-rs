@@ -4,7 +4,7 @@ use byteorder::{LittleEndian, ReadBytesExt, WriteBytesExt};
 
 use crate::{Chunk, Header};
 
-#[derive(Debug, Default)]
+#[derive(Debug, Clone, Default)]
 pub struct Frame {
     pub byte_count: u32,
     pub frame_duration_milliseconds: u16,

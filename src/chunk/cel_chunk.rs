@@ -8,7 +8,7 @@ use crate::color::{Pixels};
 use crate::helpers::read_bytes;
 use crate::{ColorDepth, Header};
 
-#[derive(Debug)]
+#[derive(Debug, Clone)]
 pub enum Cel {
     RawCel {
         width: u16,
@@ -62,7 +62,7 @@ impl Cel {
     }
 }
 
-#[derive(Debug)]
+#[derive(Debug, Clone)]
 pub struct CelChunk {
     pub layer_index: u16,
     pub x_position: i16,

@@ -1,6 +1,6 @@
 use std::io::{self, Read, Seek, SeekFrom, Write};
 
-#[derive(Debug)]
+#[derive(Debug, Clone)]
 pub struct PathChunk {}
 
 impl PathChunk {

@@ -9,7 +9,7 @@ bitflags! {
     }
 }
 
-#[derive(Debug)]
+#[derive(Debug, Clone)]
 pub struct CelExtraChunk {
     pub flags: Flags,
     pub precise_x_position: f32,

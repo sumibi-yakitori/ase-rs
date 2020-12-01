@@ -13,7 +13,7 @@ bitflags! {
     }
 }
 
-#[derive(Debug)]
+#[derive(Debug, Clone)]
 pub struct UserDataChunk {
     pub flags: Flags,
     pub text: Option<String>,

@@ -35,7 +35,7 @@ PIXEL: One pixel, depending on the image pixel format:
     Indexed: BYTE, Each pixel uses 1 byte (the index).
 */
 
-#[derive(Debug)]
+#[derive(Debug, Clone)]
 pub struct Aseprite {
     pub header: Header,
     pub frames: Vec<Frame>,

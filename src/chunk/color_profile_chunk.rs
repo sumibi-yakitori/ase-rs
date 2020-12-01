@@ -20,7 +20,7 @@ bitflags! {
     }
 }
 
-#[derive(Debug)]
+#[derive(Debug, Clone)]
 pub struct ColorProfileChunk {
     pub profile_type: ProfileType,
     pub flags: Flags,

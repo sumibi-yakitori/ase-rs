@@ -14,7 +14,7 @@ pub enum LoopAnimationDirection {
     PingPong = 2,
 }
 
-#[derive(Debug)]
+#[derive(Debug, Clone)]
 pub struct Tag {
     pub from_tag: u16,
     pub to_tag: u16,
@@ -23,7 +23,7 @@ pub struct Tag {
     pub tag_name: String,
 }
 
-#[derive(Debug)]
+#[derive(Debug, Clone)]
 pub struct FrameTagsChunk {
     pub number_of_tags: u16,
     pub tags: Vec<Tag>,
